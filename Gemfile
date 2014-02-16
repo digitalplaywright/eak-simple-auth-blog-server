@@ -7,6 +7,7 @@ gem 'rails', '4.0.2'
 gem 'devise'
 gem 'pg'
 gem 'active_model_serializers'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
   gem 'thin'
