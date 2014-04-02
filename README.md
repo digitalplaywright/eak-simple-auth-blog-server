@@ -7,8 +7,19 @@ and [Ember-Simple-Auth](https://github.com/simplabs/ember-simple-auth)
 
 ## Getting Started
 
-Follow the [Ember App Kit Getting Started Guide](http://iamstef.net/ember-app-kit/guides/getting-started.html)
+Install gems and create a database
 
+```
+bundle install
+rake db:create
+rake db:migrate
+```
+
+Run the server:
+
+```
+rails s
+```
 
 ## License
 
