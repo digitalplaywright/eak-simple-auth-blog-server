@@ -7,7 +7,7 @@ and [Ember-Simple-Auth](https://github.com/simplabs/ember-simple-auth)
 
 ## Getting Started
 
-tbd
+Follow the [Ember App Kit Getting Started Guide](http://iamstef.net/ember-app-kit/guides/getting-started.html)
 
 
 ## License
