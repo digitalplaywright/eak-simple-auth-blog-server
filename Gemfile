@@ -6,7 +6,7 @@ gem 'rails', '4.0.2'
 #gem 'cancan'
 gem 'doorkeeper'
 gem 'devise'
-gem 'pg'
+gem 'sqlite3'
 gem 'active_model_serializers'
 gem 'rack-cors', :require => 'rack/cors'
 
