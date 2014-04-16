@@ -1,6 +1,4 @@
 EmAuthServer::Application.routes.draw do
-  resources :posts
-
   use_doorkeeper
 
   root :to => "home#index"
@@ -9,4 +7,5 @@ EmAuthServer::Application.routes.draw do
   #devise_for :users, controllers: { sessions: "sessions", registrations: "registrations" }
 
   resources :users
+  resources :posts
 end
