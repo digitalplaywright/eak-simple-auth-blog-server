@@ -53,7 +53,9 @@ ActiveRecord::Schema.define(version: 20140416001856) do
   add_index "oauth_applications", ["uid"], name: "index_oauth_applications_on_uid", unique: true
 
   create_table "posts", force: true do |t|
+    t.string   "title"
     t.string   "details"
+    t.integer  "category"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
