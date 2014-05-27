@@ -1,4 +1,6 @@
 EmAuthServer::Application.routes.draw do
+  resources :comments
+
   use_doorkeeper
 
   root :to => "home#index"

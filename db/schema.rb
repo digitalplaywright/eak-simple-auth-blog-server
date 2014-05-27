@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140416001856) do
+ActiveRecord::Schema.define(version: 20140527194638) do
+
+  create_table "comments", force: true do |t|
+    t.string   "message"
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "oauth_access_grants", force: true do |t|
     t.integer  "resource_owner_id", null: false
@@ -55,7 +62,7 @@ ActiveRecord::Schema.define(version: 20140416001856) do
   create_table "posts", force: true do |t|
     t.string   "title"
     t.string   "details"
-    t.integer  "category"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

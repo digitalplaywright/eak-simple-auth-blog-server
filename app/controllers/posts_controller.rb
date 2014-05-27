@@ -26,6 +26,8 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
 
+    @post.user = current_resource_owner
+
     if @post.save
       render :json => @post, :status => :created
 
